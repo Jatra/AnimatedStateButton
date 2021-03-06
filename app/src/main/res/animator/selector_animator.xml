@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <objectAnimator
+            android:duration="300"
+            android:propertyName="colorFilter"
+            android:valueFrom="@android:color/holo_red_dark"
+            android:valueTo="@android:color/darker_gray"
+            android:valueType="colorType" />
+    </item>
+
+    <item android:state_enabled="true">
+        <objectAnimator
+            android:duration="1000"
+            android:propertyName="colorFilter"
+            android:valueFrom="@android:color/darker_gray"
+            android:valueTo="@android:color/holo_red_dark"
+            android:valueType="colorType" />
+    </item>
+</selector>
